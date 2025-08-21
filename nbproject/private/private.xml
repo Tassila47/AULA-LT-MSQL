@@ -4,8 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/curso/Documents/NetBeansProjects/Aula-LT-MSQL/src/Db/DB.java</file>
-            <file>file:/C:/Users/curso/Documents/NetBeansProjects/Aula-LT-MSQL/src/aula/lt/msql/AulaLTMSQL.java</file>
-            <file>file:/C:/Users/curso/Documents/NetBeansProjects/Aula-LT-MSQL/src/Db/Exception.java</file>
+            <file>file:/C:/Users/curso/Documents/NetBeansProjects/Aula-LT-MSQL/src/program/Program.java</file>
+            <file>file:/C:/Users/curso/Documents/NetBeansProjects/Aula-LT-MSQL/src/Db/DbException.java</file>
             <file>file:/C:/Users/curso/Documents/NetBeansProjects/Aula-LT-MSQL/db.properties</file>
         </group>
     </open-files>
