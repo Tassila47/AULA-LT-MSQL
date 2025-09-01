@@ -52,6 +52,26 @@ public class Program {
                     rs.getInt("DepartmentId")
                 );
             }
+            
+            System.out.println("---------UPDATE-----------");
+            
+            try{
+    
+    ps = conn.prepareStatement(
+            "UPDATE seller "
+            + "SET BaseSalary = BaseSalary + ?"
+            + "WHERE DepartmentId = ?" );
+    
+    ps.setDouble(1, 2000.0);
+    ps.setInt(2, 4);
+    
+    int rowsUpdated = ps.executeUpdate();
+             System.out.println("Finalizado" + rowsUpdated);
+
+         }catch(SQLException e){
+         e.printStackTrace();
+         }
+            
         
         } catch (SQLException e) {
             e.printStackTrace();
@@ -59,11 +79,14 @@ public class Program {
             try {
                 if (rs != null) rs.close();
                 if (st != null) st.close();
-                DB.closeConnection();
+                if (ps != null) ps.close();
+                DB.closeConnection(); //fecha a conexão
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
+       
+        
     }
 }  
     
